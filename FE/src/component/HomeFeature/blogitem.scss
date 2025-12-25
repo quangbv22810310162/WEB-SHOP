@@ -1,0 +1,10 @@
+.text-wrap p {
+    display: -webkit-box; /* Định dạng hộp linh hoạt */
+    -webkit-line-clamp: 2; /* Giới hạn tối đa 2 dòng */
+    -webkit-box-orient: vertical; /* Đặt hướng hộp theo chiều dọc */
+    overflow: hidden; /* Ẩn phần văn bản vượt quá */
+    text-overflow: ellipsis; /* Hiển thị "..." nếu nội dung bị cắt */
+    max-height: calc(1.4em * 2); /* Đảm bảo chiều cao phù hợp với số dòng (line-height * số dòng) */
+    line-height: 1.4; /* Chiều cao của mỗi dòng */
+    font-size: 16px; /* Tùy chỉnh kích thước chữ nếu cần */
+}

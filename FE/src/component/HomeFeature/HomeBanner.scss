@@ -1,0 +1,82 @@
+.home_banner_area {
+    min-height: 500px !important;
+
+    .box-banner {
+        background: no-repeat center center;
+        background-size: cover; 
+        height: 700px;
+        max-width: 100%;
+
+        .banner_inner {
+            min-height: 600px !important;
+            margin-left:5% !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .banner_content {
+                text-align: left;
+
+                h4 {
+                    font-size: 2rem;
+                    color: #ff4674;
+                    text-align: left;
+                    font-weight: 800;
+                }
+
+                .main_btn {
+                    margin-top: 20px;
+                    padding: 10px 20px;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+// Media queries để hỗ trợ các kích thước khác nhau
+@media (max-width: 992px) { // Tablet
+    .home_banner_area {
+        .box-banner {
+            height: 500px;
+
+            .banner_inner {
+                min-height: 400px !important;
+
+                .banner_content {
+                    h4 {
+                        font-size: 1.8rem;
+                    }
+
+                    .main_btn {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) { // Mobile
+    .home_banner_area {
+        .box-banner {
+            height: 400px;
+
+            .banner_inner {
+                min-height: 300px !important;
+
+                .banner_content {
+                    h4 {
+                        font-size: 1.5rem;
+                        margin-top:50%;
+                    }
+
+                    .main_btn {
+                        font-size: 0.8rem;
+                        padding: 8px 15px;
+                    }
+                }
+            }
+        }
+    }
+}
