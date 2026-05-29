@@ -33,6 +33,7 @@ app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }))
 
 viewEngine(app);
 initwebRoutes(app);
+connectDB();
 
 const server = http.createServer(app);
 
