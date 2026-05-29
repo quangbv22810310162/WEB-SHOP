@@ -1,10 +1,10 @@
 import express from "express";
 import bodyParser from "body-parser";
-import viewEngine from "./config/viewEngine";
+import viewEngine from "./config/viewEngine.js";
 import initWebRoutes from "./routes/web.js";
-import connectDB from "./config/connectDB";
+import connectDB from "./config/connectDB.js";
 import http from 'http'
-import {sendMessage} from './services/messageService'
+import { sendMessage } from "./services/messageService.js";
 require('dotenv').config();
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 let app = express();
